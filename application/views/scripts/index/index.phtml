@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhmtl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title><?php echo $this->escape($this->title); ?></title>
+</head>
+<body>
+    <h1><?php echo $this->escape($this->title)."!!!"; ?></h1>
+
+	<a href="<?php
+        echo $this->url(array(
+            'controller' => 'Page',
+            'action' => 'index'
+        ), null, true);
+        ?>
+           ">
+               <?php echo 'link'; ?>
+	</a>
+
+
+	<ul class="navigation">
+	    <li>
+	        <a title="Go Home" href="/ZendFrameworkQuickstart/">Home</a>
+	    </li>
+	    <li class="active">
+	        <a href="/ZendFrameworkQuickstart/index.php/page/index">Page</a>
+	        <ul>
+	            <li class="active">
+	                <a href="/ZendFrameworkQuickstart/index.php/page/home/">Foo Server</a>
+	                <ul>
+	                    <li class="active">
+	                        <a href="/products/server/faq">FAQ</a>
+	                    </li>
+	                    <li>
+	                        <a href="/products/server/editions">Editions</a>
+	                    </li>
+	                    <li>
+	                        <a href="/products/server/requirements">System Requirements</a>
+	                    </li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="/products/studio">Foo Studio</a>
+	                <ul>
+	                    <li>
+	                        <a href="/products/studio/customers">Customer Stories</a>
+	                    </li>
+	                    <li>
+	                        <a href="/products/studio/support">Support</a>
+	                    </li>
+	                </ul>
+	            </li>
+	        </ul>
+	    </li>
+	    <li>
+	        <a title="About us" href="/company/about">Company</a>
+	        <ul>
+	            <li>
+	                <a href="/company/about/investors">Investor Relations</a>
+	            </li>
+	            <li>
+	                <a class="rss" href="/company/news">News</a>
+	                <ul>
+	                    <li>
+	                        <a href="/company/news/press">Press Releases</a>
+	                    </li>
+	                    <li>
+	                        <a href="/archive">Archive</a>
+	                    </li>
+	                </ul>
+	            </li>
+	        </ul>
+	    </li>
+	    <li>
+	        <a href="/community">Community</a>
+	        <ul>
+	            <li>
+	                <a href="/community/account">My Account</a>
+	            </li>
+	            <li>
+	                <a class="external" href="http://forums.example.com/">Forums</a>
+	            </li>
+	        </ul>
+	    </li>
+	</ul>
+</body>
+</html>
