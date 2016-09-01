@@ -15,7 +15,7 @@ class IndexController extends Zend_Controller_Action
     public function indexAction()
     {
         // action body
-        $this->view->assign('title', 'Hello World?');
+        $this->view->assign('title', 'Hello World');
     }
 
     public function homeAction()
